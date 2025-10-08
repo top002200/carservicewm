@@ -27,7 +27,7 @@ func InitDatabase() {
 	// ใช้ DATABASE_PATH environment variable หรือ default เป็น "./test.db"
 	dbPath := os.Getenv("DATABASE_PATH")
 	if dbPath == "" {
-		dbPath = "./test.db"
+		dbPath = "./wangmai.db"
 	}
 
 	// เปิด SQLite database connection

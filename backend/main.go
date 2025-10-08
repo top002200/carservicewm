@@ -32,7 +32,7 @@ func main() {
 		// อ่าน path ของ DB จาก Environment (Render ตั้งไว้แล้วเป็น /var/data/test.db)
 		dbPath := os.Getenv("DATABASE_PATH")
 		if dbPath == "" {
-			dbPath = "./test.db" // fallback
+			dbPath = "./wangmai.db" // fallback
 		}
 
 		// บังคับให้ไฟล์ถูกดาวน์โหลดด้วยชื่อ test.db
@@ -119,7 +119,7 @@ func CORSMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		allowedOrigins := []string{
 			"http://localhost:5173",
-			"https://carservice-klonghad.netlify.app",
+			"https://carservice-wangmai.netlify.app",
 		}
 
 		origin := c.Request.Header.Get("Origin")
