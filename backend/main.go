@@ -107,7 +107,7 @@ func main() {
 	// ตรวจสอบพอร์ต
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "8080"
+		port = "8000"
 	}
 
 	// รันเซิร์ฟเวอร์

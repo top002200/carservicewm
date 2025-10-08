@@ -94,7 +94,7 @@ const ExpenseBillPrint = () => {
               fontWeight: "bold",
             }}
           >
-            สถานตรวจสภาพรถคลองหาด
+            สถานตรวจสภาพรถท็อป-นิว
           </h5>
           <div>Tel: 083-066-2661, 081-715-8683</div>
           <div>วันที่: {formatDate(billData.date)}</div>

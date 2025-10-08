@@ -655,7 +655,7 @@ const User: React.FC = () => {
               <div className="container">
                 {/* ===== Header ใบเสร็จ ===== */}
                 <div className="text-center mb-3">
-                  <h5 className="fw-bold mb-1">สถานตรวจสภาพรถคลองหาด</h5>
+                  <h5 className="fw-bold mb-1">สถานตรวจสภาพรถท็อป-นิว</h5>
                   <div>Tel: 083-066-2661, 081-715-8683</div>
                 </div>
 

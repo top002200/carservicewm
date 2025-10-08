@@ -46,7 +46,7 @@ const UserLayout: React.FC = () => {
             className="mb-0 fw-bold text-white"
             style={{ whiteSpace: "nowrap" }}
           >
-            สถานตรวจสภาพรถสาขาคลองหาด
+            สถานตรวจสภาพรถสาขาท็อป-นิว
           </h4>
         </div>
 
@@ -108,7 +108,6 @@ const UserLayout: React.FC = () => {
                 💸 รายการบิลจ่าย
               </Button>
             </li>
-           
           </ul>
         </Offcanvas.Body>
       </Offcanvas>

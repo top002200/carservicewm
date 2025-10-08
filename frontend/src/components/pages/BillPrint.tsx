@@ -224,7 +224,7 @@ const BillPrint = () => {
       <div
         id="bill-to-print"
         // ✅ เพิ่ม class 'disable-editing' เพื่อให้ CSS ป้องกันการเลือกข้อความมีผล
-        className="disable-editing" 
+        className="disable-editing"
         lang="th"
         translate="no"
         style={{
@@ -253,7 +253,7 @@ const BillPrint = () => {
               fontWeight: "bold",
             }}
           >
-            สถานตรวจสภาพรถคลองหาด
+            สถานตรวจสภาพรถท็อป-นิว
           </h5>
           <div style={{ marginBottom: "5px" }}>
             <div>เลขที่บิล: {billData.bill_number || "-"}</div>
