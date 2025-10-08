@@ -1,6 +1,11 @@
 # ---------- Build Stage ----------
 FROM golang:1.23-alpine AS build
 
+# ✅ ติดตั้งเครื่องมือที่จำเป็นสำหรับ CGO
+RUN apk add --no-cache gcc g++ musl-dev
+
+# ✅ เปิดใช้งาน CGO
+ENV CGO_ENABLED=1
 
 # ตั้ง working directory
 WORKDIR /app
@@ -14,14 +19,14 @@ RUN go mod download
 # คัดลอก source code ทั้งหมดเข้ามา
 COPY . .
 
-# สร้าง binary ชื่อ main
+# ✅ สร้าง binary ชื่อ main (พร้อม CGO)
 RUN go build -o main .
 
 # ---------- Run Stage ----------
 FROM alpine:latest
 
-# ติดตั้ง timezone (optional)
-RUN apk add --no-cache tzdata
+# ✅ ติดตั้ง timezone และ sqlite-libs เพื่อให้ binary ใช้งานได้
+RUN apk add --no-cache tzdata sqlite-libs
 
 # ตั้ง working directory
 WORKDIR /root/
