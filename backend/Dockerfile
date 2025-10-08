@@ -1,5 +1,6 @@
 # ---------- Build Stage ----------
-FROM golang:1.22-alpine AS build
+FROM golang:1.23-alpine AS build
+
 
 # ตั้ง working directory
 WORKDIR /app
