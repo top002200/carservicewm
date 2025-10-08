@@ -1,0 +1,161 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+/* ✅ กรอบกล่องข้อมูล */
+.section-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(116, 4, 95, 0.1);
+  margin-bottom: 25px;
+}
+
+/* ✅ หัวเรื่องสีม่วง */
+.section-title {
+  color: #74045f;
+  font-weight: bold;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* ✅ ปุ่มหลักโทนม่วง */
+.btn-primary,
+.btn-primary:focus {
+  background-color: #74045f;
+  border-color: #74045f;
+}
+.btn-primary:hover {
+  background-color: #5e024c;
+  border-color: #5e024c;
+}
+
+/* ✅ ปุ่มรอง */
+.btn-outline-primary {
+  border-color: #74045f;
+  color: #74045f;
+}
+.btn-outline-primary:hover {
+  background-color: #74045f;
+  color: white;
+}
+
+/* ✅ Modal สไตล์ */
+.custom-modal .modal-content {
+  border-radius: 20px;
+  border: none;
+  overflow: hidden;
+}
+.custom-modal .modal-header,
+.custom-modal .modal-footer {
+  background-color: #f9f3f8;
+  border: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #f8f9fa;
+}
+
+/* Chrome, Safari, Edge */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+
+  /* ✅ ลบ flex */
+  display: block;
+
+  /* ✅ รองรับความสูงฟอร์ม */
+  min-height: 100vh;
+
+  /* ✅ ป้องกัน scroll แนวนอนกรณีมี element ยาวเกิน */
+  overflow-x: hidden;
+}
+
+.main-wrapper {
+  width: 100%;
+  max-width: 1024px;
+}
+
+
+.container-fluid {
+  max-width: 1200px; /* กำหนดความกว้างสูงสุดของคอนเทนเนอร์ */
+  width: 100%; /* ให้คอนเทนเนอร์ขยายเต็มความกว้าง */
+}
+
+.header {
+  width: 100%; /* ให้ Header ยาวเต็มความกว้าง */
+  position: relative; /* หรือ fixed ตามความต้องการ */
+  top: 0; /* ตำแหน่งด้านบน */
+  left: 0; /* ตำแหน่งด้านซ้าย */
+  z-index: 1000; /* เพื่อให้แน่ใจว่า Header อยู่ข้างบนสุด */
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
